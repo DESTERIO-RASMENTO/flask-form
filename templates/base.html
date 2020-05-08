@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{{url_for('static', filename='bootstrap-4.4.1-dist/css/bootstrap-grid.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='bootstrap-4.4.1-dist/css/bootstrap.min.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="{{url_for('index')}}" class="navbar-brand">Home</a>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="{{url_for('static', filename='bootstrap-4.4.1-dist/js/bootstrap.min.js')}}"></script>
+</body>
+
+</html>
